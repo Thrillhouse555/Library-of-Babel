@@ -28,7 +28,7 @@ Password - guest
 
 ## Cypress
 
-Cypress was set up with the following...
+A copy of my Cypress tests is saved in this repo.
 
 ## mySQL
 
