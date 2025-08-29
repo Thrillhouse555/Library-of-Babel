@@ -11,7 +11,7 @@ I wondered if it would be possible to use my skills in test automation to find a
 
 ## The Concept
 
-My first thoughts is this could be a near impossible task, there was more books than atoms in the universe so building a automation suite which will search a book a second to find the story of my life was out of the question.
+My first thoughts is this could be a near impossible task, there was more books than atoms in the universe so building an automation suite which will search a book a second to find the story of my life was out of the question.
 
 However finding something which wasn't gibberish, that could be something worth building.
 
