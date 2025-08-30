@@ -30,6 +30,9 @@ Password - guest
 
 A copy of my Cypress tests is saved in this repo.
 
+If you'd like to see better examples of automation for testing using Cypress and other tools check out my portfolio demos.
+https://github.com/stars/Thrillhouse555/lists/demos
+
 ## mySQL
 
 The mySQL database can be viewed via an API I built and following this link it will show all the bookmarks logged which showed discovery of something which wasn't gibberish.
