@@ -15,12 +15,33 @@ describe('basic tests', () => {
   })
 
   it('check book title using fixtures', () => {
-    cy.fixture('smokeTest').then((book) => {
-      BookPage.checkTitle(book.title)
-      BookPage.checkBookText(book.text);
+    cy.fixture('smokeTest').then((data) => {
+      BookPage.checkTitle(data.title)
+      BookPage.checkBookText(data.text);
     })
   });
 
+  it('check bookmark is updated via command', () => {
+    cy.updateBookmark('bookmarkTest.json');
+  });
 
+  it('post bookmark api request', () => {
+    cy.fixture('smokeTest').then((data) => {
+      BookPage.checkBookText(data.text);
+      cy.url().then((currentURL) => {
+        cy.request('POST', 'http://172.236.28.233:3000/bookmark', {
+          booktext: data.text,
+          url: currentURL
+        }).then((response) => {
+          expect(response.status).to.eq(201);
+          cy.task('logToTerminal', `Bookmark logged with ID: ${response.body.id}`);
+        });
+      });
+    });
+  });
+
+  it('post bookmark api request 2', () => {
+    BookPage.checkFixtureAndLogBookmark('smokeTest.json')
+  });
 
 })
