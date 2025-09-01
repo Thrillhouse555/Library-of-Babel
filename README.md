@@ -30,9 +30,15 @@ Password - guest
 
 A copy of my Cypress tests is saved in this repo.
 
+They are simple tests to check if each page contains text which matches. For simplity I'm currently only searching for my name 'george' rather than the book of my life.
+
+If a test is successful it will save the page by sending it's url string to my database via the API using cy.request.
+
 If you'd like to see better examples of automation for testing using Cypress and other tools check out my portfolio demos.
 https://github.com/stars/Thrillhouse555/lists/demos
 
 ## mySQL
 
-The mySQL database can be viewed via an API I built and following this link it will show all the bookmarks logged which showed discovery of something which wasn't gibberish.
+The mySQL database can be viewed via an API I built and following this link it will show all the bookmarks logged which showed discovery of something which weren't gibberish.
+
+http://172.236.28.233:3000/bookmark
