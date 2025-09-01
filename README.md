@@ -24,7 +24,7 @@ And any discovered books which contained anything valuable would be logged and s
 Access to Jenkins can be found on my portfolio link and user account details are below. The guest account access is read only and just for the purpose of demostrating the processes in action.
 
 Username - guest   
-Password - guest
+Password - (on request)
 
 ## Cypress
 
