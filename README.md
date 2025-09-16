@@ -41,4 +41,4 @@ https://github.com/stars/Thrillhouse555/lists/demos
 
 The mySQL database can be viewed via an API I built and following this link it will show all the bookmarks logged which showed discovery of something which weren't gibberish.
 
-http://172.236.28.233:3000/bookmark
+http://georgeansell.co.uk:3000/bookmark
