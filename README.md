@@ -21,7 +21,7 @@ And any discovered books which contained anything valuable would be logged and s
 
 ## Jenkins
 
-Access to Jenkins can be found on my portfolio link and user account details are below. The guest account access is read only and just for the purpose of demostrating the processes in action.
+Access to Jenkins is on http://georgeansell.co.uk:8080/ and user account details are below. The guest account access is read only and just for the purpose of demostrating the processes in action.
 
 Username - guest   
 Password - (on request)
