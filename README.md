@@ -15,7 +15,7 @@ My first thoughts is this could be a near impossible task, there was more books 
 
 However finding something which wasn't gibberish, that could be something worth building.
 
-The plan was to use **Cypress** as I knew cy.prompt was at beta stages and could be handy to use a LLM in finding languages in gibberish.
+The plan was to use **Cypress** as I knew cy.prompt was at beta stages and could be handy to use a LLM in finding languages in gibberish. However in the end result I went on to use Copilot CLI.
 **Jenkins** would be used to run the tests in a continuous loop.
 And any discovered books which contained anything valuable would be logged and saved to a **mySQL** database.
 
