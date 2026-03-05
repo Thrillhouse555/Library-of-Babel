@@ -8,10 +8,11 @@ describe('basic search', () => {
 
     afterEach(() => {
         cy.updateBookmark('bookmark.json');
+        cy.saveBookmarkAPI('bookmark.json');
     });
 
-  it('check book text', () => {
-    BookPage.checkFixtureAndLogBookmark('bookText')
+  it.only('save page data', () => {
+      BookPage.savePageData();
   });
 
 })

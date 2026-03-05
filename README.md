@@ -19,20 +19,10 @@ The plan was to use **Cypress** as I knew cy.prompt was at beta stages and could
 **Jenkins** would be used to run the tests in a continuous loop.
 And any discovered books which contained anything valuable would be logged and saved to a **mySQL** database.
 
-## Jenkins
+## My Blog & Results
 
-Access to Jenkins can be found on my portfolio link and user account details are below. The guest account access is read only and just for the purpose of demostrating the processes in action.
+If interested in the live results and how the progress of this project went you can visit the link below.
 
-Username - guest   
-Password - guest
+https://georgeansell.co.uk/bookmarks.html
 
-## Cypress
-
-A copy of my Cypress tests is saved in this repo.
-
-If you'd like to see better examples of automation for testing using Cypress and other tools check out my portfolio demos.
-https://github.com/stars/Thrillhouse555/lists/demos
-
-## mySQL
-
-The mySQL database can be viewed via an API I built and following this link it will show all the bookmarks logged which showed discovery of something which wasn't gibberish.
+Note - To keep the file size of this repo not to large I've removed the large dictionary files & also the node files.

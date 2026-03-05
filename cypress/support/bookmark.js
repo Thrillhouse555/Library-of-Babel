@@ -37,3 +37,19 @@ Cypress.Commands.add('getBookmark', (fixtureName) => {
     return url
   });
 });
+
+Cypress.Commands.add('saveBookmarkAPI', (fixtureName) => {
+  const bookmarkApiUrl = Cypress.env('BOOKMARK_API_URL') || 'https://georgeansell.co.uk/api/current-bookmark';
+  cy.fixture(fixtureName).then((bookmark) => {
+    cy.request('POST', bookmarkApiUrl, {
+      hexagon: bookmark.hexagon,
+      wall: bookmark.wall,
+      shelf: bookmark.shelf,
+      volume: bookmark.volume,
+      page: bookmark.page
+    }).then((response) => {
+      expect(response.status).to.eq(201);
+      cy.task('logToTerminal', 'Current bookmark saved to database');
+    });
+  });
+});

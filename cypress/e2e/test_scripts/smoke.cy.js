@@ -26,10 +26,11 @@ describe('basic tests', () => {
   });
 
   it('post bookmark api request', () => {
+    const bookmarkApiUrl = Cypress.env('BOOKMARK_API_URL') || 'https://georgeansell.co.uk/bookmark';
     cy.fixture('smokeTest').then((data) => {
       BookPage.checkBookText(data.text);
       cy.url().then((currentURL) => {
-        cy.request('POST', 'http://172.236.28.233:3000/bookmark', {
+        cy.request('POST', bookmarkApiUrl, {
           booktext: data.text,
           url: currentURL
         }).then((response) => {
@@ -40,7 +41,7 @@ describe('basic tests', () => {
     });
   });
 
-  it('post bookmark api request 2', () => {
+  it.only('post bookmark api request 2', () => {
     BookPage.checkFixtureAndLogBookmark('smokeTest.json')
   });
 

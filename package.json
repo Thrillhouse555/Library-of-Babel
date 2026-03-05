@@ -4,12 +4,17 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "npx cypress open",
-    "cy:smoketest": "npx cypress run --browser chrome --spec=cypress/e2e/test_suites/smoke_test.cy.js"
+    "cy:smoke": "npx cypress run --browser electron --headless --spec cypress/e2e/test_suites/smoke_test.cy.js",
+    "cy:search": "npx cypress run --browser electron --headless --spec cypress/e2e/test_suites/search_tests.cy.js",
+    "cy:advanced": "npx cypress run --browser electron --headless --spec cypress/e2e/test_suites/advanced_search.cy.js",
+    "analyse": "node scripts/analyse-pages.js",
+    "analyse-large": "node scripts/larger-dictionary.js",
+    "score": "node scripts/score-sentences.mjs",
+    "save-score"  : "node scripts/save-scores-to-api.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "cypress": "^14.5.4",
     "cypress-if": "^1.13.2",
@@ -18,5 +23,17 @@
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^5.0.0",
     "mochawesome-report-generator": "^6.2.0"
-  }
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.74.0",
+    "@github/copilot-sdk": "^0.1.24",
+    "axios": "^1.13.5",
+    "dotenv": "^17.3.1",
+    "mysql2": "^3.17.2",
+    "openai": "^6.22.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "description": ""
 }
